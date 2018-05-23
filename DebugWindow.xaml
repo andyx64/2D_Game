@@ -1,0 +1,61 @@
+﻿<Window x:Class="_2dGame.DebugWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2dGame"
+        mc:Ignorable="d"
+        Title="DebugWindow" Height="300" Width="300">
+    <Grid Margin="0" RenderTransformOrigin="0.497,0.499">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock>Debug</TextBlock>
+        <TextBlock Grid.Row="1">X</TextBlock>
+        <TextBlock Grid.Row="2">Y</TextBlock>
+        <TextBlock Grid.Row="3">Height</TextBlock>
+        <TextBlock Grid.Row="4">Width</TextBlock>
+        <TextBlock Grid.Row="5">Multiplayer X</TextBlock>
+        <TextBlock Grid.Row="6">GetTop</TextBlock>
+        <TextBlock Grid.Row="7">GetLeft</TextBlock>
+        <TextBlock Grid.Row="8">CollisionTop</TextBlock>
+        <TextBlock Grid.Row="9">CollisionBottom</TextBlock>
+        <TextBlock Grid.Row="10">CollisionLeft</TextBlock>
+        <TextBlock Grid.Row="11">CollisionRight</TextBlock>
+
+        <TextBlock Grid.Row="0" Grid.Column="2" Text=""></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding Path=X}"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Path=Y}"></TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding Path=Height}"></TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="2" Text="{Binding Path=Width}"></TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="2" Text="{Binding Path=ReceivedMessage}"></TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="2" Text="{Binding Path=GetTop}"></TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="2" Text="{Binding Path=GetLeft}"></TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="2" Text="{Binding Path=CollisionTop}"></TextBlock>
+        <TextBlock Grid.Row="9" Grid.Column="2" Text="{Binding Path=CollisionBottom}"></TextBlock>
+        <TextBlock Grid.Row="10" Grid.Column="2" Text="{Binding Path=CollisionLeft}"></TextBlock>
+        <TextBlock Grid.Row="11" Grid.Column="2" Text="{Binding Path=CollisionRight}"></TextBlock>
+
+    </Grid>
+</Window>
